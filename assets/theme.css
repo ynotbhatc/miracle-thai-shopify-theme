@@ -685,6 +685,48 @@ button:focus {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* Product Category Styling */
+.product-category.food-ingredients {
+    background: #f8fdf8;
+    padding: 3rem 0;
+}
+
+.product-category.cooking-products {
+    background: #fdf8f0;
+    padding: 3rem 0;
+}
+
+.product-image.thai-import {
+    background: linear-gradient(45deg, #d4af37, #f4c430);
+}
+
+.product-image.thai-cookware {
+    background: linear-gradient(45deg, #8b4513, #cd853f);
+}
+
+.products-cta {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #2c5530, #4a7c59);
+    color: white;
+    text-align: center;
+}
+
+/* Products page hero styling */
+.products-hero {
+    background: linear-gradient(rgba(76, 124, 89, 0.9), rgba(76, 124, 89, 0.9)), 
+                linear-gradient(135deg, #2d4a32 0%, #4a7c59 50%, #6b9a75 100%);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Print styles */
 @media print {
     .site-header,

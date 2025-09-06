@@ -1,0 +1,433 @@
+{% comment %}
+  Products Page Template - Miracle Thai Enterprises
+  Showcases all products with categories for locally grown herbs vs Thai imports
+{% endcomment %}
+
+<div class="page-width">
+  <header class="section-header">
+    <h1 class="section-header__title">{{ page.title | default: 'Our Products' }}</h1>
+    {% if page.content != blank %}
+      <div class="section-header__content">
+        {{ page.content }}
+      </div>
+    {% endif %}
+  </header>
+</div>
+
+<section class="products-page">
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <div class="products-hero">
+      <div class="hero-content">
+        <h1>Herbs and Cooking Utensils Reflecting Thailand</h1>
+        <h2>Fresh Local Herbs Meet Authentic Thai Tradition</h2>
+        <p>Experience authentic Thai flavors with our locally grown fresh herbs, naturally preserved in banana leaves using traditional Thai methods that provide temperature regulation - no artificial cooling needed. From our local herb farm to your kitchen with 1,000-year-old Thai wisdom.</p>
+        
+        <div class="key-features">
+          <div class="feature">🌿 Locally Grown Fresh</div>
+          <div class="feature">🍃 Banana Leaf Preserved</div>
+          <div class="feature">🚚 2+ Week Freshness</div>
+          <div class="feature">⚡ Amazon Prime Available</div>
+        </div>
+        
+        <a href="https://amazon.com/stores/miraclethai" class="cta-amazon" target="_blank" rel="noopener">
+          Shop on Amazon <span class="prime-badge">Prime</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Herbs, Spices & Thai Food Section -->
+    <section class="product-category food-ingredients">
+      <div class="category-header">
+        <h2 class="section-title">🌿 Herbs, Spices & Thai Food</h2>
+        <p class="category-description">Fresh locally grown herbs, authentic Thai spice blends, and traditional Thai food ingredients.</p>
+      </div>
+      
+      <div class="product-grid">
+        
+        <!-- Fresh Kaffir Lime Leaves -->
+        <div class="product-card featured">
+          <div class="product-image">
+            <div class="product-icon">🍃<br>Fresh Kaffir<br>Lime Leaves</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Kaffir Lime Leaves</h3>
+            <div class="product-price">
+              <span class="price">Starting at $12.99</span>
+              <span class="price-compare">$18.99</span>
+            </div>
+            <p class="product-description">
+              Locally grown fresh kaffir lime leaves, naturally preserved in banana leaves using traditional Thai methods. No refrigeration needed for 2+ weeks!
+            </p>
+            <ul class="product-features">
+              <li>Grown locally (not imported from Thailand)</li>
+              <li>Wrapped in fresh banana leaves for temperature control</li>
+              <li>2+ week freshness guarantee</li>
+              <li>Essential for authentic Tom Yum, Tom Kha, and curries</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fresh Lemongrass -->
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-icon">🌾<br>Fresh<br>Lemongrass</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fresh Lemongrass Stalks</h3>
+            <div class="product-price">
+              <span class="price">Starting at $9.99</span>
+            </div>
+            <p class="product-description">
+              Fresh, locally grown lemongrass stalks perfect for Tom Yum soup, Massaman curry, and Thai teas.
+            </p>
+            <ul class="product-features">
+              <li>Locally grown for maximum freshness</li>
+              <li>Perfect for soups, curries, and teas</li>
+              <li>Essential for authentic Tom Yum and Tom Kha</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dried Kaffir Lime Leaves -->
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-icon">🍂<br>Dried Kaffir<br>Lime Leaves</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Dried Kaffir Lime Leaves</h3>
+            <div class="product-price">
+              <span class="price">Starting at $8.99</span>
+            </div>
+            <p class="product-description">
+              Locally grown kaffir lime leaves, carefully dried to preserve their essential oils and citrusy flavor.
+            </p>
+            <ul class="product-features">
+              <li>Made from our locally grown fresh leaves</li>
+              <li>Extended shelf life</li>
+              <li>Perfect for curries and long-simmered dishes</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dried Lemongrass -->
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-icon">🌾<br>Dried<br>Lemongrass</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Dried Lemongrass</h3>
+            <div class="product-price">
+              <span class="price">Starting at $7.99</span>
+            </div>
+            <p class="product-description">
+              Locally grown lemongrass, dried to perfection. Ideal for making Thai herbal teas and seasoning blends.
+            </p>
+            <ul class="product-features">
+              <li>Made from locally grown fresh lemongrass</li>
+              <li>Perfect for teas and infusions</li>
+              <li>Long shelf life</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tom Yum Spice Blend -->
+        <div class="product-card">
+          <div class="product-image thai-import">
+            <div class="product-icon">🌶️<br>Tom Yum<br>Spice Blend</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Authentic Tom Yum Spice Blend</h3>
+            <div class="product-price">
+              <span class="price">Starting at $11.99</span>
+            </div>
+            <p class="product-description">
+              Traditional Tom Yum spice blend imported directly from Thailand. The perfect balance of sour, spicy, and aromatic flavors.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Authentic recipe blend</li>
+              <li>Just add fresh herbs and protein</li>
+              <li>Makes restaurant-quality Tom Yum</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tom Kha Spice Blend -->
+        <div class="product-card">
+          <div class="product-image thai-import">
+            <div class="product-icon">🥥<br>Tom Kha<br>Spice Blend</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Authentic Tom Kha Spice Blend</h3>
+            <div class="product-price">
+              <span class="price">Starting at $11.99</span>
+            </div>
+            <p class="product-description">
+              Traditional Tom Kha spice blend from Thailand. Creates the perfect creamy coconut soup with authentic Thai flavors.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Traditional coconut soup base</li>
+              <li>Pairs perfectly with fresh kaffir lime leaves</li>
+              <li>Restaurant-quality results</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Green Curry Paste -->
+        <div class="product-card">
+          <div class="product-image thai-import">
+            <div class="product-icon">💚<br>Green Curry<br>Paste</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Authentic Green Curry Paste</h3>
+            <div class="product-price">
+              <span class="price">Starting at $9.99</span>
+            </div>
+            <p class="product-description">
+              Traditional green curry paste imported from Thailand. Made with fresh green chilies and aromatic herbs.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Made with fresh green chilies</li>
+              <li>Authentic spicy Thai flavor</li>
+              <li>Perfect with our fresh kaffir lime leaves</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Red Curry Paste -->
+        <div class="product-card">
+          <div class="product-image thai-import">
+            <div class="product-icon">🌶️<br>Red Curry<br>Paste</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Authentic Red Curry Paste</h3>
+            <div class="product-price">
+              <span class="price">Starting at $9.99</span>
+            </div>
+            <p class="product-description">
+              Traditional red curry paste imported from Thailand. Perfect balance of spice and flavor for authentic Thai red curry.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Traditional recipe</li>
+              <li>Medium heat level</li>
+              <li>Restaurant-quality results</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Traditional Cooking Products Section -->
+    <section class="product-category cooking-products">
+      <div class="category-header">
+        <h2 class="section-title">🧺 Traditional Thai Cooking Products</h2>
+        <p class="category-description">Authentic Thai cookware and traditional kitchen tools imported directly from Thailand for the most authentic cooking experience.</p>
+      </div>
+      
+      <div class="product-grid">
+        
+        <!-- Traditional Rice Steamer Baskets -->
+        <div class="product-card featured">
+          <div class="product-image thai-cookware">
+            <div class="product-icon">🧺<br>Rice Steamer<br>Baskets</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Traditional Rice Steamer Baskets</h3>
+            <div class="product-price">
+              <span class="price">Starting at $24.99</span>
+            </div>
+            <p class="product-description">
+              Authentic bamboo rice steamer baskets imported from Thailand. Essential for making perfect sticky rice and steaming vegetables the traditional Thai way.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Traditional bamboo construction</li>
+              <li>Perfect for sticky rice</li>
+              <li>Develops natural non-stick with use</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thai Mortar and Pestle Set -->
+        <div class="product-card">
+          <div class="product-image thai-cookware">
+            <div class="product-icon">🥣<br>Mortar &<br>Pestle Set</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Traditional Thai Mortar & Pestle</h3>
+            <div class="product-price">
+              <span class="price">Starting at $32.99</span>
+            </div>
+            <p class="product-description">
+              Heavy granite mortar and pestle set imported from Thailand. Essential for making authentic curry pastes and Som Tum papaya salad.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Heavy granite construction</li>
+              <li>Perfect for curry pastes and Som Tum</li>
+              <li>Traditional Thai kitchen essential</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thai Wok Set -->
+        <div class="product-card">
+          <div class="product-image thai-cookware">
+            <div class="product-icon">🍳<br>Thai Wok<br>Set</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Traditional Thai Wok Set</h3>
+            <div class="product-price">
+              <span class="price">Starting at $45.99</span>
+            </div>
+            <p class="product-description">
+              Complete Thai wok set with traditional carbon steel wok and authentic wooden utensils imported from Thailand.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Carbon steel construction</li>
+              <li>Includes traditional wooden utensils</li>
+              <li>Perfect for Pad Thai and stir-fries</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thai Sticky Rice Pot -->
+        <div class="product-card">
+          <div class="product-image thai-cookware">
+            <div class="product-icon">🍯<br>Sticky Rice<br>Pot</div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Traditional Sticky Rice Pot</h3>
+            <div class="product-price">
+              <span class="price">Starting at $28.99</span>
+            </div>
+            <p class="product-description">
+              Traditional aluminum sticky rice steaming pot imported from Thailand. The authentic way to steam perfect sticky rice.
+            </p>
+            <ul class="product-features">
+              <li>Imported from Thailand</li>
+              <li>Traditional aluminum construction</li>
+              <li>Specifically designed for sticky rice</li>
+              <li>Used in Thai homes for generations</li>
+            </ul>
+            <div class="product-actions">
+              <a href="https://amazon.com/dp/B0XXXXXXXX" class="buy-button amazon-button" target="_blank" rel="noopener">
+                Buy on Amazon <span class="prime-badge">Prime</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="education">
+      <div class="container">
+        <h2 class="section-title">Why Choose Miracle Thai Enterprises?</h2>
+        
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon">🍃</div>
+            <h3 class="edu-title">Traditional Banana Leaf Preservation</h3>
+            <p>Our locally grown kaffir lime leaves are preserved using 1,000-year-old Thai banana leaf wrapping techniques. The banana leaves provide natural temperature control, keeping herbs fresh for 2+ weeks without refrigeration.</p>
+            <div class="thai-accent">พันปีของภูมิปัญญาไทย - One thousand years of Thai wisdom</div>
+          </div>
+          
+          <div class="edu-card">
+            <div class="edu-icon">🌱</div>
+            <h3 class="edu-title">Local Farm to Kitchen</h3>
+            <p>While our spices and cookware are imported from Thailand for authenticity, our fresh herbs are grown right here locally. This means maximum freshness and shorter supply chains for our most perishable products.</p>
+            <div class="thai-accent">สดใหม่จากฟาร์มท้องถิ่น - Fresh from local farms</div>
+          </div>
+          
+          <div class="edu-card">
+            <div class="edu-icon">🚚</div>
+            <h3 class="edu-title">Amazon Prime Delivery</h3>
+            <p>All our products are available on Amazon with Prime shipping. Get fresh, locally grown herbs and authentic Thai imports delivered fast with the convenience and reliability you trust.</p>
+            <div class="thai-accent">จัดส่งรวดเร็วและเชื่อถือได้ - Fast and reliable delivery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="products-cta">
+      <div class="cta-container">
+        <h2>Ready to Cook Authentic Thai Food?</h2>
+        <p>Everything you need for authentic Thai cooking - fresh local herbs preserved the traditional way, plus authentic imports from Thailand.</p>
+        <div class="cta-buttons">
+          <a href="https://amazon.com/stores/miraclethai" class="cta-button amazon" target="_blank" rel="noopener">
+            Shop All Products on Amazon <span class="prime-badge">Prime</span>
+          </a>
+          <a href="/pages/recipes" class="cta-button secondary">
+            Browse Thai Recipes
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>
